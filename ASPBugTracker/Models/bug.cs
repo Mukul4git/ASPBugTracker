@@ -7,22 +7,28 @@ namespace ASPBugTracker.Models
 
         public int Id { get; set; }
 
+        public int StatusId     { get; set; }
+
+        public int PriorityId { get; set; }
+
         [Required]
         public string Name { get; set; }
 
-        [Required]
-        public string status { get; set; }
+
 
         [Required]
-        public string type { get; set; }
+        public string Type { get; set; }
         [Required]
-        public string description { get; set; }
-        [Required]
-        public string priority { get; set; }
-        public string solution { get; set; }
+        public string Description { get; set; }
+
+        public string Solution { get; set; }
         
         [Required]
-        public string creator { get; set; }
+        public string Creator { get; set; }
+
+        //Parent model ref.
+        public Status Status { get; set; }
+        public Priority Priority { get; set; }
 
 
     }

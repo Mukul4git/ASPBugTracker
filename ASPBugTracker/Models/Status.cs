@@ -10,5 +10,6 @@ namespace ASPBugTracker.Models
         [Required]
         public string Name { get; set; }
 
+        public List<bug>? bugs { get; set; }
     }
 }
