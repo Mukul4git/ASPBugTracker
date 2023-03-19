@@ -17,8 +17,6 @@ builder.Services.AddControllersWithViews();
 
 var config = builder.Configuration;
 
-builder.Services.AddAuthentication()
-    .AddGoogle(options => )
 
 var app = builder.Build();
 
