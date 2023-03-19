@@ -7,9 +7,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using ASPBugTracker.Data;
 using ASPBugTracker.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ASPBugTracker.Controllers
 {
+    [Authorize(Roles = "Administrator")]
+
     public class PrioritiesController : Controller
     {
         private readonly ApplicationDbContext _context;

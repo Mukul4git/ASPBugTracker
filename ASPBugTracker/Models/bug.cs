@@ -27,8 +27,8 @@ namespace ASPBugTracker.Models
         public string Creator { get; set; }
 
         //Parent model ref.
-        public Status Status { get; set; }
-        public Priority Priority { get; set; }
+        public Status? Status { get; set; }
+        public Priority? Priority { get; set; }
 
 
     }
